@@ -1,4 +1,5 @@
 import styled,{createGlobalStyle, css} from "styled-components";
+// import Search from "./Search";
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -24,24 +25,42 @@ export const Header = styled.header`
     
     
 `
+export const Search = styled.div`
+    /* border: 2px solid red; */
+    width: 50%;
+    ${Center}
+    form{
+        /* border: 2px solid red; */
+        width: 100%;
+        
+    }
+    input{
+        /* border: 10px solid yellow; */
+        width: 100%;
+        height: 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        
+        
+    }
+    
+`
 
 export const Logo = styled.div`
     /* border: 2px solid red; */
-    width: 50%;
+    width: 30%;
     color: white;
     font-size: 0.8rem;
     /* margin-left: 10px; */
     ${Center}
-    justify-content: start;
+    /* justify-content: start; */
 `
-// export const Search = styled.div`
 
-// `
 export const Carrinho = styled.div`
     /* border: 2px solid red; */
     width: 20%;
     ${Center}
-    justify-content: flex-end;
+    
     img{
         width: 30%;
     }
