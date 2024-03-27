@@ -40,10 +40,13 @@ export const Search = styled.div`
         height: 40px;
         border-radius: 12px;
         text-decoration: none;
-        
+        padding-left: 5px;
+        outline: none;
         
     }
-    
+    input::placeholder{
+        padding-left: 5px;
+    }
 `
 
 export const Logo = styled.div`
