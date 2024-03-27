@@ -1,4 +1,4 @@
-import styled,{createGlobalStyle, css} from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 // import Search from "./Search";
 
 export const GlobalStyle = createGlobalStyle`
@@ -9,22 +9,21 @@ export const GlobalStyle = createGlobalStyle`
         font-style: 'Playfair Display SC';
 
     }
-`
+`;
 export const Center = css`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Header = styled.header`
-    /* border: 2px solid red; */
-    background-color: #34495E;
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
-    
-    
-`
+  /* border: 2px solid red; */
+  background-color: #34495e;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
 export const Search = styled.div`
     /* border: 2px solid red; */
     width: 50%;
@@ -40,31 +39,29 @@ export const Search = styled.div`
         height: 40px;
         border-radius: 12px;
         text-decoration: none;
-        padding-left: 5px;
-        outline: none;
+        
         
     }
-    input::placeholder{
-        padding-left: 5px;
-    }
+    
 `
 
 export const Logo = styled.div`
-    /* border: 2px solid red; */
-    width: 30%;
-    color: white;
-    font-size: 0.8rem;
-    /* margin-left: 10px; */
-    ${Center}
-    /* justify-content: start; */
-`
+  /* border: 2px solid red; */
+  width: 30%;
+  color: white;
+  font-size: 0.8rem;
+  /* margin-left: 10px; */
+  ${Center}/* justify-content: start; */
+`;
 
-export const Carrinho = styled.div`
-    /* border: 2px solid red; */
-    width: 20%;
-    ${Center}
-    
-    img{
-        width: 30%;
-    }
-`
+export const Carrinho = styled.button`
+  /* border: 2px solid red; */
+  /* width: 70px; */
+  /* height: 70px; */
+  ${Center}
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+`;
