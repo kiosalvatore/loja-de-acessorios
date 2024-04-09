@@ -1,6 +1,8 @@
 import * as S from "./header_styled";
-import carrinho from "../../assets/carrinho.png";
+// import carrinho from "../../assets/carrinho.png";
 import { FaCartPlus } from "react-icons/fa";
+
+
 export default function Header() {
   function cadastrarUsuario(e) {
     e.preventDefault();
@@ -27,7 +29,7 @@ export default function Header() {
         </S.Search>
 
         <S.Carrinho onClick={produtosCarrinho}>
-          <FaCartPlus />
+          <FaCartPlus/>
         </S.Carrinho>
       </S.Header>
     </div>
